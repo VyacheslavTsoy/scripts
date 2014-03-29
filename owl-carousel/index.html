@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta name = "format-detection" content = "telephone=no" />
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/owl.carousel.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+  	 <script type="text/javascript">
+  		  $(window).load(function() {
+          // Селектор
+          var carousel = $("#carousel");
+          
+          // Инициализация
+  				carousel.owlCarousel({
+              autoPlay: 3000, //Set AutoPlay to 3 seconds
+              items : 4,
+              itemsDesktop : [1199,3],
+              itemsDesktopSmall : [979,3]
+          });
+
+          // Custom Navigation Events
+          $(".carousel_next").click(function(){
+            carousel.trigger('owl.next');
+          })
+          $(".carousel_prev").click(function(){
+            carousel.trigger('owl.prev');
+          })
+
+  			});
+  	 </script>
+</head>
+<body>
+  <!-- Start -->
+  <div id="carousel">
+          
+    <div class="item"><img src="images/1.jpg" alt=""></div>
+    <div class="item"><img src="images/2.jpg" alt=""></div>
+    <div class="item"><img src="images/3.jpg" alt=""></div>
+    <div class="item"><img src="images/4.jpg" alt=""></div>
+    <div class="item"><img src="images/5.jpg" alt=""></div>
+   
+  </div>
+  
+  <div class="carousel_prev">СЮДА</div>
+  <div class="carousel_next">ТУДА</div>
+  <!-- End -->
+</body>
+</html>
